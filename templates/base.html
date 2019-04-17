@@ -1,0 +1,38 @@
+{% load static %}
+<!DOCTYPE <!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<!-- Font Awesome -->
+  <link rel="stylesheet" href="{% static 'css/all.css' %}">
+  <!-- Bootstrap -->
+  <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+  <!-- Custom -->
+  <link rel="stylesheet" href="{% static 'css/style.css' %}">
+  <!-- Lightbox -->
+   <link rel="stylesheet" href="{% static 'css/lightbox.min.css' %}">
+
+	<title>BT Real Estate</title>
+	<link rel="stylesheet" href="">
+</head>
+<body>
+	<!-- Top Bar -->
+  {% include 'partials/_topbar.html' %}
+    <!-- Nav Bar -->
+  {% include 'partials/_navbar.html' %}
+    <!-- Footer -->
+  {% include 'partials/_footer.html' %}
+  {% block content %} {% endblock %}
+
+	<footer id="main-footer" class="py-4 bg-primary text-white text-center">
+    Copyright &copy;
+    <span class="year"></span> BT Real Estate
+  	</footer>
+
+  <script src="{% static 'js/jquery-3.3.1.min.js'%}" ></script>
+  <script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+  <script src="{% static 'js/lightbox.min.js' %}"></script>
+  <script src="{% static 'js/main.js' %}"></script>
+</body>
+</html>
